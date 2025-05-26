@@ -1,5 +1,6 @@
 # zelestra_challenge
  Zelestra X AWS ML Ascend Challenge
+ First, we need to clean the data. We should use every row to make the model more accurate. Let’s figure out a smart way to handle missing data and create new columns from the ones we already have. We can split the columns among ourselves to clean things up faster.
 ``` mermaid
 graph TD
     A[Training Data 20000 rows] --> B[Data Preprocessing]
