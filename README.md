@@ -1,6 +1,6 @@
 # zelestra_challenge
  Zelestra X AWS ML Ascend Challenge
-```
+``` mermaid
 graph TD
     A[Training Data 20000 rows] --> B[Data Preprocessing]
     B --> C[Missing Values]
