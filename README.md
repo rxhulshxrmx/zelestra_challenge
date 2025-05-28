@@ -76,10 +76,7 @@ graph TD
 
 ![clipboard1](https://github.com/user-attachments/assets/a2dae1c4-5568-4fa3-8463-0a0e03aa6e47)
 
-features = ['module_temperature', 'irradiance', "power = ['current','voltage'] ", 'panel_age', 'maintenance_count', 'soiling_ratio', 'error_code']
-
-STRING_ID - MISSING VALUES
-
+features = [module_temperature, irradiance, power = [current *voltage], panel_age, maintenance_count, soiling_ratio, error_code]
 
 
 
