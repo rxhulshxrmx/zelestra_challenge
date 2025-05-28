@@ -74,8 +74,6 @@ graph TD
     end
 ```
 
-![image](https://github.com/user-attachments/assets/bfa2a37e-ddc0-4c48-8992-2553ad848414)
-
 
 features = [module_temperature, irradiance, power = [current *voltage], panel_age, maintenance_count, soiling_ratio, error_code, humidity]
 
