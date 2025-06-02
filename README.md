@@ -75,7 +75,38 @@ graph TD
 ```
 
 
-features = [module_temperature, irradiance, power = [current *voltage], panel_age, maintenance_count, soiling_ratio, error_code, humidity]
+## Data Preprocessing
+
+### Data Cleaning
+
+1. **Handling Missing Values**:
+   - **Panel Age**: Imputed missing values using the median age of panels grouped by `string_id`.
+   - **Maintenance Count**: Used a hierarchical approach to impute missing values based on `string_id` and `error_code`.
+   - **Soiling Ratio**: Imputed using median values based on maintenance count bins.
+   - **Module Temperature**: Applied linear regression and KNN imputation to fill missing values.
+   - **Power**: Created a robust power feature using current and voltage, handling missing values with KNN imputation.
+   - **Irradiance**: Imputed missing values using physical relationships and KNN imputation.
+   - **Humidity**: Imputed missing values using KNN imputation.
+   - **Error Code**: Filled missing values with a new category 'Unknown'.
+
+2. **Outlier Removal**:
+   - Used the Interquartile Range (IQR) method to detect and remove outliers from numerical features.
+
+### Feature Engineering
+
+- **Power Feature**: Created a new feature representing the power output of the panels using current and voltage.
+- **Encoding Categorical Variables**: One-hot encoded the `error_code` categorical variable to prepare for modeling.
+
+### Data Visualization
+
+- **Distribution Plots**: Visualized the distribution of numerical features to understand their spread and identify any anomalies.
+- **Correlation Matrix**: Analyzed the correlation between features to understand relationships and guide feature selection for modeling.
+
+### Data Preparation for Modeling
+
+- **Feature Scaling**: Standardized numerical features to ensure they are on a similar scale, which is crucial for many machine learning algorithms.
+- **Saving Cleaned Data**: The cleaned and preprocessed data is saved to a CSV file for use in subsequent modeling steps.
+
 
 
 
