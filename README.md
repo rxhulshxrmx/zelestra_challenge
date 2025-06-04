@@ -107,6 +107,38 @@ graph TD
 - **Feature Scaling**: Standardized numerical features to ensure they are on a similar scale, which is crucial for many machine learning algorithms.
 - **Saving Cleaned Data**: The cleaned and preprocessed data is saved to a CSV file for use in subsequent modeling steps.
 
+## Repository Structure
+
+```
+zelestra_challenge/
+├── data_preprocessing/     # Scripts and notebooks for data preprocessing
+├── dataset/               # Raw dataset files
+├── processed_dataset/     # Cleaned and processed datasets
+├── scaler/               # Saved scaler objects for data normalization
+├── venv/                 # Python virtual environment
+├── training_model.ipynb  # Main notebook for model training
+├── requirements.txt      # Python package dependencies
+└── README.md            # Project documentation
+```
+
+## Setup and Installation
+
+1. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Run the data preprocessing scripts in the `data_preprocessing` directory
+2. Open and run the `training_model.ipynb` notebook to train and evaluate the models
+
 
 
 
