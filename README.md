@@ -1,7 +1,19 @@
 # zelestra_challenge (Rank 203/1016)
  Zelestra X AWS ML Ascend Challenge  
  
- First, we need to clean the data. We should use every row to make the model more accurate. Need to figure out ways to handle missing data and create new columns from the ones we already have. We can split the columns among ourselves to clean things up faster.  
+As solar energy systems become increasingly popular in sustainable energy infrastructures, maintaining high performance and reducing downtime are essential. Traditional maintenance methods for photovoltaic (PV) systems are often reactive, leading to energy loss and increased costs. The goal of this project is to develop a Machine Learning model that predicts performance degradation and potential failures in solar panels.
+
+Task 
+
+You are tasked to develop a Machine Learning model that predicts performance degradation and potential failures in solar panels using historical and real-time sensor data, enabling predictive maintenance and optimal energy output.
+
+Dataset description
+
+The dataset folder contains the following files: 
+
+train.csv: 20000 x 17
+test.csv: 12000 x 16
+sample_submission.csv: 5 x 2 
  
 ``` mermaid
 graph TD
