@@ -3,18 +3,16 @@
  
 As solar energy systems become increasingly popular in sustainable energy infrastructures, maintaining high performance and reducing downtime are essential. Traditional maintenance methods for photovoltaic (PV) systems are often reactive, leading to energy loss and increased costs. The goal of this project is to develop a Machine Learning model that predicts performance degradation and potential failures in solar panels.
 
-Task 
+## Task 
 
 You are tasked to develop a Machine Learning model that predicts performance degradation and potential failures in solar panels using historical and real-time sensor data, enabling predictive maintenance and optimal energy output.
 
-Dataset description
+## Evaluation metrics  
+The model's performance will be evaluated using the following metrics:
 
-The dataset folder contains the following files: 
+``` Score = 100*(1-np.sqrt(metrics.mean_squared_error(actual,predicted)) ```
 
-train.csv: 20000 x 17
-test.csv: 12000 x 16
-sample_submission.csv: 5 x 2 
- 
+## Roadmap
 ``` mermaid
 graph TD
     A[Training Data 20000 rows] --> B[Data Preprocessing]
