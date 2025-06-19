@@ -1,4 +1,4 @@
-# zelestra_challenge
+# zelestra_challenge (Rank 203/1016)
  Zelestra X AWS ML Ascend Challenge  
  
  First, we need to clean the data. We should use every row to make the model more accurate. Need to figure out ways to handle missing data and create new columns from the ones we already have. We can split the columns among ourselves to clean things up faster.  
